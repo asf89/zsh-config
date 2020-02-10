@@ -37,3 +37,6 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 source /home/asf/.usr-config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Adding Anaconda 3.7 to PATH
+# export PATH="/home/asf/Programs/anaconda3/bin:$PATH" 
