@@ -43,7 +43,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 
-source /home/asf/.usr-config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/asf/.config/zsh-config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Adding Anaconda 3.7 to PATH
 # export PATH="/home/asf/Programs/anaconda3/bin:$PATH"  # commented out by conda initialize
