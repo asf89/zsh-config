@@ -45,24 +45,6 @@ fi
 
 source /home/asf/.config/zsh-config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Adding Anaconda 3.7 to PATH
-# export PATH="/home/asf/Programs/anaconda3/bin:$PATH"  # commented out by conda initialize
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-#__conda_setup="$('/home/asf/Programs/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-#if [ $? -eq 0 ]; then
-#    eval "$__conda_setup"
-#else
-#    if [ -f "/home/asf/Programs/anaconda3/etc/profile.d/conda.sh" ]; then
-#        . "/home/asf/Programs/anaconda3/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/home/asf/Programs/anaconda3/bin:$PATH"
-#    fi
-#fi
-#unset __conda_setup
-# <<< conda initialize <<<
-
 # Adding .local directory to PATH
 export PATH="/home/asf/.local/bin:$PATH"
 
@@ -73,5 +55,5 @@ export PATH="/snap/bin:$PATH"
 GPG_TTY=$(tty)
 export GPG_TTY
 
-#export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# Adding Coursier to PATH
+export PATH="$PATH:/home/asf/.local/share/coursier/bin"
